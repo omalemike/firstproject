@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Elliot Pheasant.com</title> 
+	  <link rel="stylesheet" href="Boostrap.css">
+	  <script lang="Javascript">function Validate() {
+		  if (myform.Username.value =="")
+		  {
+			  alert("You Cannot Leave Username Field Blank");
+			  myform.Username.focus();
+			  return false;
+		  };
+		  if(myform.Email.value == ""){
+			  alert("Email Field Blank or Entry is Incorrect");
+			  myform.Email.focus();
+			  return false;
+			  };
+			  if (myform.Password.value ==""){
+				  alert(" Password Field Blank");
+				  myform.Password.focus();
+				  return false;
+			  }
+	  }
+	  </script>
+  </head>
+  <body style="text-align: center;  font-family: cursive;background-color: silver;">
+	<form action="Message.html"   name="myform">
+			<h1 style="background-color:green ;color: white;text-align: center;" >Login In To Your Account</h1>
+			<br><br>
+				<h3>
+					<label for="Username">Username:</label>
+					<input type="text" name="Username" id="Username">
+					<br><br><br>
+					<label for="Email">Email:</label>
+					<input type="Email" name="Email" id="Email">
+					<br><br><br>
+					<label for="">Password:</label> 
+					<input type="Password" name="Password" id="Password">
+					<br><br><br>`
+					<button class="btn btn-danger" onclick="Validate()">Sign In</button>
+				 	<br> <br>
+					<a href="Register_Website.html" >Register An Account With Us</a>  
+				</h3>
+		                   
+				
+			</form>	
+				  
+  </body>
+  </html>
